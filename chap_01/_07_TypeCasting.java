@@ -33,5 +33,24 @@ public class _07_TypeCasting {
         int convertedScoreInt = (int)score_d; // 100.8 -> 100 int 자동 변환 불가
         System.out.println(convertedScoreInt);
 
+        // 02 / 05 ~
+        // 숫자:93 -> 문자열로 변환(방법 두 가지 확인)
+        String s1 = String.valueOf(93);
+        s1 = Integer.toString(93); // 93
+        System.out.println(s1); //93
+        // double형 : 90.5 -> 문자열로 변환
+        String s2 = String.valueOf(90.5);
+        s2 = Double.toString(90.5);
+        System.out.println(s2); // 90.5
+
+        // 문자열:"95" ->  숫자로 형변환
+        int i = Integer.parseInt("95");
+        System.out.println(i); //95
+        double d = Double.parseDouble("98.8");
+        System.out.println(d);
+
+        // 숫자가 아닌 값을 숫자로 변환하려는 시도! > Exception in thread "main" java.lang.. error
+        int error = Integer.parseInt("java");
+        //System.out.println(error);
     }
 }
